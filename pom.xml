@@ -59,6 +59,13 @@
                 <artifactId>ywm-gateway</artifactId>
                 <version>1.0.0</version>
             </dependency>
+
+            <dependency>
+                <groupId>ywm.library</groupId>
+                <artifactId>shared</artifactId>
+                <version>1.0.0</version>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
 
