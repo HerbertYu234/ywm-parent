@@ -27,7 +27,6 @@
     </dependencies>
 
 
-
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -67,31 +66,48 @@
             </dependency>
 
         </dependencies>
+
+
     </dependencyManagement>
 
     <!--&lt;!&ndash; 插件仓库 &ndash;&gt;-->
     <!--<pluginRepositories>-->
-        <!--<pluginRepository>-->
-            <!--<id>central</id>-->
-            <!--<url>http://txdev/artifactory/maven</url>-->
-        <!--</pluginRepository>-->
+    <!--<pluginRepository>-->
+    <!--<id>central</id>-->
+    <!--<url>http://txdev/artifactory/maven</url>-->
+    <!--</pluginRepository>-->
     <!--</pluginRepositories>-->
 
     <!--&lt;!&ndash; spica仓库 &ndash;&gt;-->
     <!--<repositories>-->
-        <!--<repository>-->
-            <!--<id>central</id>-->
-            <!--<url>http://txdev/artifactory/maven</url>-->
-        <!--</repository>-->
-        <!--<repository>-->
-            <!--<id>snapshots</id>-->
-            <!--<url>http://txdev/artifactory/maven-local-snapshot</url>-->
-            <!--<snapshots>-->
-                <!--<updatePolicy>always</updatePolicy>-->
-                <!--<enabled>true</enabled>-->
-            <!--</snapshots>-->
-        <!--</repository>-->
+    <!--<repository>-->
+    <!--<id>central</id>-->
+    <!--<url>http://txdev/artifactory/maven</url>-->
+    <!--</repository>-->
+    <!--<repository>-->
+    <!--<id>snapshots</id>-->
+    <!--<url>http://txdev/artifactory/maven-local-snapshot</url>-->
+    <!--<snapshots>-->
+    <!--<updatePolicy>always</updatePolicy>-->
+    <!--<enabled>true</enabled>-->
+    <!--</snapshots>-->
+    <!--</repository>-->
     <!--</repositories>-->
 
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>com.spotify</groupId>
+                <artifactId>docker-maven-plugin</artifactId>
+
+                <configuration>
+                    <imageTags>
+                        <imageTag>com.docker.yhb</imageTag>
+                    </imageTags>
+                </configuration>
+
+            </plugin>
+        </plugins>
+    </build>
 
 </project>
