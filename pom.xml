@@ -51,8 +51,8 @@
             </dependency>
 
             <dependency>
-                <groupId>ywm</groupId>
-                <artifactId>ywm-blog</artifactId>
+                <groupId>yww-foundation</groupId>
+                <artifactId>foundation-parent</artifactId>
                 <version>1.0.0</version>
             </dependency>
 
